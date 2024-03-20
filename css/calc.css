@@ -12,7 +12,7 @@ header {
     color: #FF209F;
     text-align: center;
     width: 100vw;
-    font-size: xx-large;
+    font-size: 4rem;
 }
 
 .total_display {
@@ -20,7 +20,7 @@ header {
     color: #FF209F;
     text-align: center;
     width: 100vw;
-    font-size: x-large;
+    font-size: 4rem;
 }
 
 #till_totals {
@@ -70,7 +70,7 @@ input[type=number]
   //padding-left: 20px;
   border: none;
   text-align: center;
-  background: #FF209F;
+  background: #FF6DC0;
   font-size: xx-large;
   maximum-scale: 1;
 }
