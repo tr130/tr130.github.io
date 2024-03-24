@@ -37,6 +37,7 @@ header {
     grid-template-columns: repeat(2, 50%);
     height: 80vh;
     top: 250px;
+    position: relative;
     //column-gap: 10%;
 }
     
