@@ -1,4 +1,3 @@
-<!-- Enter your HTML code here -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,28 +7,10 @@
     </head>
     <body>
         <header>hazelblast 4000</header>
-        <!--form id="till_totals">
-            <div>
-            <label for "500">500: </label>
-            <input type="number" id="500" name="500" oninput="calculate(this.id)">
-            <span id="500total" class="subtotal"><span><br>
-            </div>
-            <div>
-            <label for "250">250: </label>
-            <input type="number" id="250" name="250" oninput="calculate(this.id)">
-            <span id="250total" class="subtotal"><span><br>
-            </div>
-        </form-->
         <div class="total_display">
             <p>Total: 
             <span id="total">0.00</span></p>
         </div>
-        <!--script>
-            function calculate() {
-                let text = document.getElementById("500").value;
-                document.getElementById("500" + "total").innerHTML = Number.parseInt(text) * 500;
-            }
-        </script-->
         <script src="js/calc.js" type="text/javascript"></script>
     </body>
 </html>

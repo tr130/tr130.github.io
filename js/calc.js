@@ -32,9 +32,11 @@ for (let faceValue of faceValues) {
     fVTotal.append(fVSubTotal);
 }
 
-
 function calculate(id) {
     let quantity = Number.parseFloat(document.getElementById(id).value);
+    if (isNaN(quantity)) {
+	quantity = 0;
+    }
     let fv = Number.parseFloat(id);
     if (fv < 1) {
         document.getElementById(id + "total").innerHTML = (fv * quantity).toFixed(2);
@@ -42,11 +44,9 @@ function calculate(id) {
         document.getElementById(id + "total").innerHTML = fv * quantity;
     }
     let subTotals = document.getElementsByClassName("subtotal");
-    console.log(Number.parseFloat(subTotals[0].textContent));
     let total = 0;
     for(let subTotal of subTotals) {
         total += Number.parseFloat(subTotal.textContent);
     }
-    //let totalsum = Number.parseInt(subTotals[0].textContent) + Number.parseInt(subTotals[1].textContent);
     document.getElementById("total").innerHTML = total.toFixed(2);
 }
