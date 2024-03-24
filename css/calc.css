@@ -25,26 +25,37 @@ header {
 
 #till_totals {
     display: grid;
-    grid-template-columns: repeat(2, 45%);
+    grid-template-columns: repeat(2, 50%);
     height: 80vh;
-    column-gap: 10%;
+    //column-gap: 10%;
 }
     
 
 .fv_total {
+  font-family: 'Poppins';
+  font-weight: 600;
+  margin: 1rem;
   position: relative;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 20% 60% 20%;
+  //flex-direction: row;
+  //justify-content: space-around;
 }
 
 .fv_total label {
+  flex-grow: 1;
   //border: 1px solid #000;
   //border-radius: 5px 5px 0 0;
-  font-size: large;
-  position: relative;
-  top: 20%;
-  height:20%;
-
+  font-size: 2rem;
+  //position: relative;
+  //top: 20%;
+  //height:20%;
+  background-color: red;
+  display: flex;
+    align-items: center;
+  //  justify-content: center;
+  background-color: #5C80BC;
+  padding-left: 0.5rem;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -60,6 +71,7 @@ input[type=number]
 }
 
 .fv_total input {
+  flex-grow: 2;
   width: 100%;
   height: 100%;
   line-height: 1.65;
@@ -71,7 +83,7 @@ input[type=number]
   border: none;
   text-align: center;
   background: #FF6DC0;
-  font-size: xx-large;
+  font-size: 4rem;
   maximum-scale: 1;
 }
 
@@ -80,11 +92,17 @@ input[type=number]
 }
 
 .fv_total span {
-    position: relative;
+  flex-grow: 1;
+    //position: relative;
     //border: 1px solid #000;
     text-align: right;
-    height: 20%;
-    top: -20%;
-    font-size: large;
+    //height: 20%;
+    //top: -20%;
+    font-size: 2rem;
+  background-color: red;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E7E247;
 }
 
