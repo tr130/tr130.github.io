@@ -7,6 +7,14 @@ body {
     background: #1e1e24;
 }
 
+#top-content {
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    background-color: #1E1E24;
+    top: 0;
+}
+
 header {
     font-family: 'RocketRinder';
     color: #FF209F;
@@ -24,9 +32,11 @@ header {
 }
 
 #till_totals {
+    z-index: 0;
     display: grid;
     grid-template-columns: repeat(2, 50%);
     height: 80vh;
+    top: 250px;
     //column-gap: 10%;
 }
     
